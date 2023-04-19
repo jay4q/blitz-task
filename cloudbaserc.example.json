@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "envId": "{{env.TCB_ENVID}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "{{DATA.2}}",
+      "timeout": 20,
+      "runtime": "Nodejs12.16",
+      "installDependency": false,
+      "handler": "index.main",
+      "memorySize": 256,
+      "envVariables": {
+        "TZ": "Asia/Shanghai"
+      },
+      "triggers": [
+        {
+          "name": "{{DATA.3}}",
+          "type": "timer",
+          "config": "{{DATA.4}}"
+        }
+      ]
+    }
+  ]
+}

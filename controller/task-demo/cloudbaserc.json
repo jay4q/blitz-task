@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "envId": "{{env.TCB_ENVID}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "task-demo",
+      "timeout": 20,
+      "runtime": "Nodejs12.16",
+      "installDependency": false,
+      "handler": "index.main",
+      "memorySize": 256,
+      "envVariables": {
+        "TZ": "Asia/Shanghai"
+      },
+      "triggers": [
+        {
+          "name": "task-demo",
+          "type": "timer",
+          "config": "秒 分 小时 日 月 星期 年"
+        }
+      ]
+    }
+  ]
+}

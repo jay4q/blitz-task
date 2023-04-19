@@ -1,0 +1,19 @@
+# 系统文件
+.DS_STORE
+
+# 本地依赖
+node_modules
+yarn.*
+yarn-error.log
+
+# 产线文件
+dist/
+functions/
+
+# 环境变量
+.env.*
+!.env.deploy.example
+
+# 其他
+.npmrc
+.vscode/settings.json

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": false,
+    "target": "ES2018",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "baseUrl": "."
+  },
+  "compileOnSave": false,
+  "includes": [
+    "utils/**/*",
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "dist/**/*",
+    "functions/**/*",
+    "dev.ts"
+  ]
+}
